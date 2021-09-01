@@ -6,6 +6,7 @@ import { persistStore } from 'redux-persist';
 import env from 'react-native-config';
 
 import authReducer from './authReducer';
+import usersReducer from './usersReducer';
 
 import rootSaga from './sagas';
 
@@ -17,6 +18,7 @@ declare global {
 
 const rootReducer = combineReducers({
   authReducer,
+  usersReducer,
 });
 
 const sagaMiddleware = createSagaMiddleware();

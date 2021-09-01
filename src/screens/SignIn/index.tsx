@@ -67,6 +67,14 @@ const SignIn: React.FC<AuthNavParams<'SignIn'>> = ({ navigation }) => {
             >
               <Text>Sign up</Text>
             </Button>
+            <Button
+              onPress={() => navigation.navigate('UsersList')}
+              loading={loading}
+              style={[layoutStyles.flex, layoutStyles.mx5]}
+              type={ButtonType.Secondary}
+            >
+              <Text>Users list</Text>
+            </Button>
           </View>
         </View>
       </Card>
